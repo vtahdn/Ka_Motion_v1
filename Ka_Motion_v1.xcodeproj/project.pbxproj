@@ -14,6 +14,8 @@
 		2991916621F184E300348253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2991916421F184E300348253 /* LaunchScreen.storyboard */; };
 		2991917121F184E300348253 /* Ka_Motion_v1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991917021F184E300348253 /* Ka_Motion_v1Tests.swift */; };
 		2991917C21F184E300348253 /* Ka_Motion_v1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991917B21F184E300348253 /* Ka_Motion_v1UITests.swift */; };
+		2991918B21F184F700348253 /* SnitchWing.png in Resources */ = {isa = PBXBuildFile; fileRef = 2991918A21F184F700348253 /* SnitchWing.png */; };
+		2991918E21F1856D00348253 /* Snitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991918D21F1856D00348253 /* Snitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		2991917721F184E300348253 /* Ka_Motion_v1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ka_Motion_v1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2991917B21F184E300348253 /* Ka_Motion_v1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ka_Motion_v1UITests.swift; sourceTree = "<group>"; };
 		2991917D21F184E300348253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2991918921F184F100348253 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreMotion.framework; sourceTree = "<group>"; };
+		2991918A21F184F700348253 /* SnitchWing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnitchWing.png; sourceTree = "<group>"; };
+		2991918C21F1850B00348253 /* BrightHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrightHeader.h; sourceTree = "<group>"; };
+		2991918D21F1856D00348253 /* Snitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		2991914F21F184E200348253 = {
 			isa = PBXGroup;
 			children = (
+				2991918921F184F100348253 /* CoreMotion.framework */,
 				2991915A21F184E200348253 /* Ka_Motion_v1 */,
 				2991916F21F184E300348253 /* Ka_Motion_v1Tests */,
 				2991917A21F184E300348253 /* Ka_Motion_v1UITests */,
@@ -97,12 +104,15 @@
 		2991915A21F184E200348253 /* Ka_Motion_v1 */ = {
 			isa = PBXGroup;
 			children = (
-				2991915B21F184E200348253 /* AppDelegate.swift */,
+				2991918A21F184F700348253 /* SnitchWing.png */,
+				2991918D21F1856D00348253 /* Snitch.swift */,
 				2991915D21F184E200348253 /* ViewController.swift */,
+				2991915B21F184E200348253 /* AppDelegate.swift */,
 				2991915F21F184E200348253 /* Main.storyboard */,
 				2991916221F184E300348253 /* Assets.xcassets */,
 				2991916421F184E300348253 /* LaunchScreen.storyboard */,
 				2991916721F184E300348253 /* Info.plist */,
+				2991918C21F1850B00348253 /* BrightHeader.h */,
 			);
 			path = Ka_Motion_v1;
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 				2991916621F184E300348253 /* LaunchScreen.storyboard in Resources */,
 				2991916321F184E300348253 /* Assets.xcassets in Resources */,
 				2991916121F184E200348253 /* Main.storyboard in Resources */,
+				2991918B21F184F700348253 /* SnitchWing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,7 @@
 			files = (
 				2991915E21F184E200348253 /* ViewController.swift in Sources */,
 				2991915C21F184E200348253 /* AppDelegate.swift in Sources */,
+				2991918E21F1856D00348253 /* Snitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Senegal.Ka-Motion-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Ka_Motion_v1/BrightHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Senegal.Ka-Motion-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Ka_Motion_v1/BrightHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
